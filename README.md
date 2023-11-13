@@ -1,14 +1,11 @@
-<h1 align="center" id="title">(2) CRUD Operations using ASP NET Web API and SQL Server | Database Connection Using ODBC</h1>
+<h1 align="center" id="title">(1) Create ASP.NET Core Web Application With SQL Server Database Connection and CRUD Operations</h1>
 
 ## Tutorial
-[![CRUD Operations using ASP NET Web API and SQL Server | Database Connection Using ODBC](https://img.youtube.com/vi/cVz5oWRGbYA/0.jpg)](https://www.youtube.com/watch?v=cVz5oWRGbYA)
+[![Create ASP.NET Core Web Application With SQL Server Database Connection and CRUD Operations](https://img.youtube.com/vi/e554Zt3n4/0.jpg)](https://www.youtube.com/watch?v=e554Zt3n4)
 
 ## Getting Started
 ### 1. Inititalize Project
-- Create a <b>ASP.NET Core Web API</b> project
-- Delete unused files
-  - WeatherForecastController.cs
-  - WeatherForecast.cs
+- Create a <b>ASP.NET Core Web App</b> project
 
 ### 2. Connect Database
 - Select "Tools" -> "Connect to Database..." -> Enter server name <b>LAPTOP-JP6QO1OQ\SQLEXPRESS</b> -> Select database (make sure the database is created in SQL Server)
@@ -25,53 +22,23 @@
     }
     ```
 
-### 3. Create Controller
-- Right click <b>Controller</b> folder -> Select <b>Add</b>, then <b>Controller</b> -> Select <b>API</b> from Comman directory -> Select <b>API Controller - Empty</b> -> Enter file name
-- Create constructor (shortkey: ctor)
+### 3. Create Page
+- Create folder for specific page, e.g. ``` Client ```
+- Create empty Razor Page for CRUD ( right click the folder -> select "Add" -> select "Razor Page" -> name the "Razor Page"
+- Edit the page with HTML, CSS ...
+- For view code page, remember to include the <b>Model</b> class
   ```
-  public NameController(IConfiguration configuration)
+  // for example
+  public class ClientIno
   {
-
+    public String id;
+    public String name;
+    public String email;
+    public String phone;
+    public String address;
   }
   ```
-- Connect database
-  - Create ``` private readonly string connectionString; ```
-  - Configure
-      ```
-      public NameController(IConfiguration configuration)
-      {
-        connectionString = configuration["ConnectionStrings:SqlServerDb"] ?? "";
-      }
-      ```
+* Press f7 to switch between page and code
 
-### 4. Create Model
-- Create <b>Model</b> folder in root directory
-- Create <b>Dto</b> class first by selecting <b>Add</b>, then <b>Class</b>
-  ```
-  // For example
-  namespace WebApp.Models
-  {
-    public class ProductDto
-    {
-      [Required]
-      public string Name { get; set; } = ""; // or public string? Name { get; set; } ( define NULL value if field is not required)
-      ...
-    }
-  }
-  ```
-- Create <b>Class</b> for the model
-  ```
-  // For example
-  namespace WebApp.Models
-  {
-    public class Product
-    {
-      public int Id { get; set; };
-      public string Name { get; set; } = ""; // or public string? Name { get; set; } ( define NULL value if field is not required)
-      ...
-    }
-  }
-  ```
-
-### 5. Write API
+### 4. Write API
 You can refer to the project..
