@@ -1,7 +1,8 @@
 <h1 align="center" id="title">(1) Create ASP.NET Core Web Application With SQL Server Database Connection and CRUD Operations</h1>
 
 ## Tutorial
-[![Create ASP.NET Core Web Application With SQL Server Database Connection and CRUD Operations](https://img.youtube.com/vi/e554Zt3n4/0.jpg)](https://www.youtube.com/watch?v=e554Zt3n4)
+[![Create ASP.NET Core Web Application With SQL Server Database Connection and CRUD Operations](https://img.youtube.com/vi/T-e554Zt3n4/0.jpg)](https://www.youtube.com/watch?v=T-e554Zt3n4)
+
 
 ## Getting Started
 ### 1. Inititalize Project
