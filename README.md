@@ -1,7 +1,7 @@
-<h1 align="center" id="title">Mabul Island Toursim Website</h1>
+<h1 align="center" id="title">(2) CRUD Operations using ASP NET Web API and SQL Server | Database Connection Using ODBC</h1>
 
 ## Tutorial
-![CRUD Operations using ASP NET Web API and SQL Server | Database Connection Using ODBC](https://www.youtube.com/watch?v=cVz5oWRGbYA&t=183s&pp=ygUKYXNwLm5ldCBjIw%3D%3D)
+[![CRUD Operations using ASP NET Web API and SQL Server | Database Connection Using ODBC](https://img.youtube.com/vi/cVz5oWRGbYA/0.jpg)](https://www.youtube.com/watch?v=cVz5oWRGbYA)
 
 ## Getting Started
 ### 1. Inititalize Project
